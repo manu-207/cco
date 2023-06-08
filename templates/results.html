@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Instance Comparison - Results</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .result {
+            margin-top: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Instance Comparison - Results</h1>
+    <div class="result">
+        <p>Intel Instance: {{ intel_instance }}</p>
+        <p>Intel Price: {{ intel_price }}</p>
+        <p>Intel RAM: {{ intel_ram }}</p>
+    </div>
+    <div class="result">
+        <p>Graviton Instance: {{ graviton_instance }}</p>
+        <p>Graviton Price: {{ graviton_price }}</p>
+        <p>Graviton RAM: {{ graviton_ram }}</p>
+    </div>
+    <div class="result">
+        <p>Price Difference: {{ price_difference }}</p>
+        <p>Low-Cost Instance Suggestion: {{ lowcost_instance }}</p>
+    </div>
+</body>
+</html>

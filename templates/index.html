@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Instance Comparison</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        form {
+            width: 300px;
+            margin: 0 auto;
+        }
+
+        label {
+            display: block;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+        select {
+            width: 100%;
+            padding: 5px;
+        }
+
+        input[type="submit"] {
+            margin-top: 20px;
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Instance Comparison</h1>
+    <form action="/" method="post">
+        <label for="vcpu">Select vCPU size:</label>
+        <select id="vcpu" name="vcpu">
+            <option value="2">2 vCPUs</option>
+            <option value="4">4 vCPUs</option>
+            <option value="8">8 vCPUs</option>
+            <option value="16">16 vCPUs</option>
+            <option value="32">32 vCPUs</option>
+            <option value="48">48 vCPUs</option>
+            <option value="64">64 vCPUs</option>
+            <option value="70">70 vCPUs</option>
+            <option value="90">90 vCPUs</option>
+        </select>
+        <br>
+        <input type="submit" value="Compare Instances">
+    </form>
+</body>
+</html>
